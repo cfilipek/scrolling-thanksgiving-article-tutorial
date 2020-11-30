@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 3.3em;
+  margin: 2rem 0;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.subhead {
+  max-width: 300px;
+}
+
+.bodyText {
+  display: block;
+  float: left;
+  line-height: 1.5;
+}
+
+.bodyText:before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #000;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
+  position: relative;
+  top: 6px;
+}
+
+.content {
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  position: fixed;
+  width: 80px;
+  height: 100vh;
+  background-color: #333;
+  background-image: url(https://jeffbredenkamp.neocities.org/bgBar-min.png);
+}
+
+#logo {
+  width: 100%;
+  height: 80px;
+  background-color: #d93732;
+  background-image: url(https://www.shareicon.net/data/512x512/2016/11/23/855299_food_512x512.png);
+  background-size: 100% 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #666666;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a.button {
+  color: #d93732;
+  font-size: 1.5em;
+  border-bottom: 4px solid #d93732;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: right;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.active {
+  color: #ffffff;
+}
+
+.contentContainer {
+  max-width: 650px;
+  width: 100%;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  padding-left: 80px;
+  float: left;
+  background-image: url(https://jeffbredenkamp.neocities.org/bgGrey-min.png);
+}
+
+.imageContainer {
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image.headerImg {
+  background: url(https://thumbs.dreamstime.com/b/health-thanksgiving-healthy-banner-as-seasonal-sign-turkey-tom-gobbler-wearing-medical-face-mask-surgical-facial-199366184.jpg)
+    top right no-repeat fixed;
+  background-size: cover;
+}
+
+.image.travelImg {
+  background: url(https://www.usnews.com/dims4/USNEWS/0b893f2/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fd6%2F2d%2F9e1f1bc24ce9876cafc38e040ece%2F201123newstravel-editorial.jpg)
+    top right no-repeat fixed;
+  background-size: cover;
+}
+
+.image.zoomImg {
+  background: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F11%2F17%2Fthanksgiving-zoom-2000.jpg)
+    top right no-repeat fixed;
+  background-size: cover;
+}
+
+.image.historyImg {
+  background: url(https://www.scholastic.com/content/dam/teachers/lesson-plans/2016-2017/first-thanksgiving-vocabulary-list-4-3.jpg)
+    top right no-repeat fixed;
+  background-size: cover;
+}
+
+.image.pastImg {
+  background: url(https://news.wttw.com/sites/default/files/field/image/SpanishFluAG_LibraryOfCongress_0.jpg)
+    top right no-repeat fixed;
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 2.2rem;
+  }
+
+  .bodyText:before {
+    display: none;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  #logo {
+    height: 50px;
+  }
+
+  .contentContainer {
+    padding-left: 70px;
+    float: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
